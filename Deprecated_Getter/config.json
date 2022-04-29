@@ -1,0 +1,17 @@
+{
+  "HEADER": [
+    "Twitter Config:",
+    "@Param        Query: for searching queries.",
+    "@Param        MaxTweet: for maximum tweets. ",
+    "@Param        Time_END: Only search tweets published before this time range to avoid duplicaates. Leave EMPTY if no specified"
+  ],
+  "---0---": "-------------------------Twitter API------------------------------",
+  "CONSUMER_KEY": "****************************KeLUJ",
+  "CONSUMER_SECRET" : "****************************Qqu",
+  "ACCESS_TOKEN" : "*********************0cyT",
+  "ACCESS_TOKEN_SECRET" : "********************6J40",
+  "---1---": "---------------------------Twitter--------------------------------",
+  "Query": "Melbourne Housing",
+  "MaxTweet": "10",
+  "Time_END": "2022-04-24"
+}
