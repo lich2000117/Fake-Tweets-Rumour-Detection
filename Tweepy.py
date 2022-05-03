@@ -101,26 +101,30 @@ def get_twitter_v2(api, list_ids, JSON_PATH):
     count = 0
     for tweet_id in list_ids:
         ## Main loop to get twitter by chunks
-        
+        skip = False
         
         # This endpoint/method returns a variety of information about the Tweet(s)
         # specified by the requested ID or list of IDs
         # By default, only the ID and text fields of each Tweet will be returned
         # Additional fields are retrieved using the tweet_fields parameter, selected by hands to make sure we capture useful informations
-        try:
-            response = api.get_status(id=tweet_id)
-        except tweepy.errors.TooManyRequests:
-            # if hit rate limit, sleep 15 minutes
-            print("Count: ", count)
-            print("Hit Rate Limit, Sleep 15 minutes")
-            time.sleep(900)
-            response = api.get_status(id=tweet_id)
-            pass
-        except:
-            # If can't find that ID tweet, or other reasons skip
-            count += 1
-            continue
+        while True:
+            try:
+                response = api.get_status(id=tweet_id)
+                break # break the loop if successful
+            except tweepy.errors.TooManyRequests:
+                # if hit rate limit, sleep 15 minutes or more
+                print("Count: ", count)
+                print("Hit Rate Limit, Sleep 15 minutes")
+                time.sleep(910)
+                pass
+            except:
+                # If can't find that ID tweet, or other reasons skip current ID
+                skip=True
+                break
 
+        # pass this ID if no response returned
+        if skip:
+            continue
         output_list.append(response._json)
         # Save to json file
         
