@@ -115,6 +115,7 @@ def get_twitter_v2(api, list_ids, JSON_PATH):
             print("Hit Rate Limit, Sleep 15 minutes")
             time.sleep(900)
             response = api.get_status(id=tweet_id)
+            pass
         except:
             # If can't find that ID tweet, or other reasons skip
             count += 1
