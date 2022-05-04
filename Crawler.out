@@ -1,0 +1,136 @@
+FAAT_JOEY
+Count:  639
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  1000
+Count:  1271
+Hit Rate Limit, Sleep 15 minutes
+Count:  1932
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  2000
+Count:  2590
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  3000
+Count:  3232
+Hit Rate Limit, Sleep 15 minutes
+Count:  3891
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  4000
+Count:  4519
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  5000
+Count:  5141
+Hit Rate Limit, Sleep 15 minutes
+Count:  5768
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  6000
+Count:  6413
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  7000
+Count:  7034
+Hit Rate Limit, Sleep 15 minutes
+Count:  7676
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  8000
+Count:  8341
+Hit Rate Limit, Sleep 15 minutes
+Count:  8996
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  9000
+Count:  9613
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  10000
+Count:  10224
+Hit Rate Limit, Sleep 15 minutes
+Count:  10854
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  11000
+Count:  11605
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  12000
+Count:  12261
+Hit Rate Limit, Sleep 15 minutes
+Count:  12917
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  13000
+Count:  13554
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  14000
+Count:  14198
+Hit Rate Limit, Sleep 15 minutes
+Count:  14842
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  15000
+Count:  15484
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  16000
+Count:  16070
+Hit Rate Limit, Sleep 15 minutes
+Count:  16694
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  17000
+Count:  17328
+Hit Rate Limit, Sleep 15 minutes
+Count:  17961
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  18000
+Count:  18596
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  19000
+Count:  19249
+Hit Rate Limit, Sleep 15 minutes
+Count:  19885
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  20000
+Count:  20518
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  21000
+Count:  21154
+Hit Rate Limit, Sleep 15 minutes
+Count:  21787
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  22000
+Count:  22412
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  23000
+Count:  23058
+Hit Rate Limit, Sleep 15 minutes
+Count:  23707
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  24000
+Count:  24331
+Hit Rate Limit, Sleep 15 minutes
+Count:  24951
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  25000
+Count:  25575
+Hit Rate Limit, Sleep 15 minutes
+Saved to File! Current index of list:  26000
+Count:  26210
+Hit Rate Limit, Sleep 15 minutes
+Count:  26839
+Hit Rate Limit, Sleep 15 minutes
+Total Tweeter : 26975
+Number of twitter stored:  26975
+Job ID           : 35379559
+Cluster          : spartan
+User/Project     : chenghaol1/comp90024
+Nodes            : 1
+Wall-clock time  : 13:28:20 / 1-00:00:00
+
+Displaying overall resources usage from 2022-05-03 19:30:04 to 2022-05-04 08:58:24:
+
+NODE            CPU#        TOT%   ( USR   / SYS   / WIO   / IDLE  ) 
+
+spartan-bm088 : 
+                CPU# 1    : 1.3    (   0.9 /   0.4 /   0.0 /  98.7 ) 
+
+
+Allocated CPUs            : 1    
+  CPUs with usage <25%    : 1    
+  CPUs with usage <50%    : 0    
+  CPUs with usage >50%    : 0    
+
+Memory used (RAM)         : 0.1%  [5MB of 4000MB]
+
+--------------------------------------------
+
