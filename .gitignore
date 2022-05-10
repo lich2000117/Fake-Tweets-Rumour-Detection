@@ -1,6 +1,6 @@
 #ignore data folder
 #full_data/*
-
+PostTraining/data/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
