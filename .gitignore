@@ -1,6 +1,6 @@
 #ignore data folder
 full_data/
-task2/data/
+task2/data/full_covid.json
 task2/model/
 
 # Byte-compiled / optimized / DLL files
