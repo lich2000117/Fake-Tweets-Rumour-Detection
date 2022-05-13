@@ -5,12 +5,13 @@
 Name: Ari Boyd, Chenghao Li
 Student Number: 992301, 1067999
 
-For Task1, there's a kaggle competition involving 400+ students and we get a stable results that kept use #3 on the leaderboard.
+For Task1, there's a kaggle competition involving 400+ students and we get a stable results.
 #### Kaggle: 
-https://www.kaggle.com/competitions/rumour-detection-and-analysis-on-twitter/leaderboard?
+LeaderBoard Final Place: #3
+Link: https://www.kaggle.com/competitions/rumour-detection-and-analysis-on-twitter/leaderboard?
 
 #### Report:
-https://www.overleaf.com/read/bbxchdzbpvtv
+Link: https://www.overleaf.com/read/bbxchdzbpvtv
 
 ## File Structure:
 
