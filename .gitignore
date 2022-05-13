@@ -1,5 +1,5 @@
 #ignore data folder
-full_data/
+data/
 task2/data/full_covid.json
 task2/model/
 
