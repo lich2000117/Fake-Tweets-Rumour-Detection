@@ -3,17 +3,17 @@
 
 ##### Table of Contents  
 1. [Problem and Data](#problem-address)  
-2. [Approaches](#Approaches)  
-   1. [Classic Machine Learning](#1.-Classic-Approach) 
-   2. [Transformer And Neural Model](#2.-Transformer-+-Neural-Approach) 
-3. [Model Performance](#Model-Performance)  
-4. [Evluation and Critical Analysis](#Evluation-and-Critical-Analysis)  
-5. [What Are Rumour Like? Rumour Analysis](#What-Are-Rumour-Like?-Rumour-Analysis)  
-   1. [Trending HashTag Analysis](#Trending-HashTag-Analysis)
-   2. [Trending Topic Analysis](#Trending-Topic-Analysis)
-   3. [Sentiment Analysis](#3Sentiment-Analysis)
-6. [Conclusion](#conclusion)  
-7. [Potential Issues](#potential-issues)  
+2. [Predict Rumour Tweets](#approaches)  
+   1. [Classic Machine Learning](#1-classic-approach) 
+   2. [Transformer And Neural Model](#2-transformer--neural-approach) 
+   3. [Model Performance](#model-performance)  
+   4. [Evluation and Critical Analysis](#evluation-and-critical-analysis)  
+3. [What Are Rumour Like? Rumour Analysis](#what-are-rumour-like-rumour-analysis)  
+   1. [Trending HashTag Analysis](#1-trending-hashtag-analysis)
+   2. [Trending Topic Analysis](#2-trending-topic-analysis)
+   3. [Sentiment Analysis](#3-sentiment-analysis)
+4. [Conclusion](#conclusion)  
+5. [Potential Issues](#potential-issues)  
 
 ### Kaggle Competition
 This project is also involved in a kaggle competition involving 400+ students.
@@ -56,16 +56,14 @@ platform ‘Twitter’. The project is divided into two part:
 - a text file containing IDs of COVID-19 Related Tweets and IDs of their replies.
 - a ground truth file containing IDs of Rumour and Non-Rumour Tweets.
 - Total Number of Tweets Around ~30K.
-  
----
 
 ## Approaches
 Two approaches have been used in this project, purely based on linguistic features vs based on other attribute features.
-1. NLP approach:
-    Use words and sentences to do the predicition
+1. [Meta Data approach](#1-classic-approach)
+    Use traditional data attributes, in this case, author information to do the prediction using classical Machine Learning Model.
 
-2. Meta Data approach
-    Use traditional attributes to do the prediction
+2. [NLP Transformer approach](#2-transformer--neural-approach):
+    Use words and sentences as information, making use of Transformer model to do the predicition.
 
 ## 1. Classic Approach
 
@@ -123,7 +121,9 @@ However, after doing classifications based on either bag of words or meta data (
 BERT is a transformer model that used NOT on classification tasks, but on extracting information/attribute from a sentence or document.
 Bidirectional model means to capture the context of the text while the Encoder part means by extracting latent information from the text, the transformer output a contextual embedding layer representing the meaning of the whole sentence. (Like archive a file from file.txt -> file.zip)
 
-<img src="./mdplot/bert.png" width="600"> <img src="./mdplot/bertclass.png" width="300">
+<img src="./mdplot/bert.png" width="800"> 
+
+<img src="./mdplot/bertclass.png" width="300">
 
 With empirical experiments conducted by other researchers, it seems like the more abstraction (transformation) we have, the better the embedding captures the whole contextual information.
 
@@ -139,8 +139,6 @@ AFter running a bunch of tests, the performance comparison among models are show
 <img src="./plots/basef1.png" width="600"> 
 
 BERT is currently state of the art in this project. 
-
----
 
 ## Evluation and Critical Analysis
 
@@ -177,7 +175,7 @@ To further Address the issue, we analyse the model from the essence and generate
     - If a word is not seen in the training set, the model could not capture its contained information.
     - If too many words not occured in the model, the performance surely goes down.
 ```
-<img src="./plots/unseenwords.png" width="600"> 
+<img src="./plots/unseenwords.png" width="400"> 
 
 ---
 
@@ -283,6 +281,7 @@ and various lock-downs, so it is reasonable that the
 general sentiments are towards negative aspects.
 
 ## Conclusion
+
 - Machine Learning is all about preprocessing and feature engineering, with powerful transformer BERT to extract features, it completely beats the classical bag of words feature. 
 - Transformer BERT can capture the underlying meanings of the whole sentences while frequency counting method like bag of words can only capture the count pattern.
 - Rumours generally deliver more negative sentiments towards the general public than non-rumours.
@@ -295,9 +294,9 @@ general sentiments are towards negative aspects.
 1. Some tweets have been taken down / deleted so we can not get all data to work on.
 2. Our prediction Model sizes around 1.5GB, so it can not be saved and have to be retrained.
 
-## Other information
+---
 
-```
+## Other information about Code
 
 #### Kaggle: 
 Link: https://www.kaggle.com/competitions/rumour-detection-and-analysis-on-twitter/leaderboard?
@@ -338,4 +337,4 @@ Analysis.ipynb    # analyse the twitter data
 ./id_data/     # stores Twitter IDs
 ./full_data/storage_data    # stores scrapped data , full data set for twitter and author
 ./full_data/*.json   # these file are generated by run-time program and can be changed so it's a temporary location
-```
+
