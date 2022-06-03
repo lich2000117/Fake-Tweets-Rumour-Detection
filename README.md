@@ -1,9 +1,79 @@
 # Rumour-Detection-and-Analysis-on-Twitter
+
+## Problem Address
+
+As the Covid-19 pandemic unfolded, citizens and
+organizations of many countries took to social
+networking platforms to spread their knowledge
+surrounding the phenomenon.
+
+Some of this knowledge was based on substantiated
+facts such as data from government sources like
+the World Health Organization. However there was
+also a large number of tweets making statements
+that were based on hearsay, or personal opinion
+presented as fact.
+
+These statements, commonly referred to as
+“rumours” are an important class of social media
+objects to understand, as they could range
+from harmless assertions, to potentially deadly
+recommendations.
+
+This project details processing and classifier training
+on a set of ‘tweets’ from the popular online
+platform ‘Twitter’. The project is divided into two part:
+
+1. identifying tweets and
+2. analyse rumours
+
+## Data
+
+### What we have
+
+- a text file containing IDs of COVID-19 Related Tweets and IDs of their replies.
+- a ground truth file containing IDs of Rumour and Non-Rumour Tweets.
+
+### Preprocessing
+
+- Group the IDs of replies and their source IDs.
+- Get full tweets of provided IDs using Twitter API V1.1 and V2.
+  
+<img src="./mdplot/tweetobjori.png" width="900">
+
+- Get data for their authors.
+
+<img src="./mdplot/authorstat.png" width="900">
+
+- Sort the replies based on their publish time.
+- Gather their label (0: non-rumour, 1: rumour)
+- Filter the dataset using two approches: NLP and Meta Data Analysis
+
+<img src="./mdplot/nlpapproach.png" width="900">
+
+### Approaches
+Two approaches have been used in this project, purely based on linguistic features vs based on other attribute features.
+1. NLP approach:
+    Use words and sentences to do the predicition
+
+2. Meta Data approach
+    Use traditional attributes to do the prediction
+
+
+## Potential Issues
+
+1. Some tweets have been taken down / deleted so we can not get all data to work on.
+2. Our prediction Model sizes around 1.5GB, so it can not be saved and have to be retrained.
+
+
+
+
+
+
+
 ### Task1 : Rumour Detection of Twitter
 ### Task2 : Rumour Analysis on Twitter
 
-Name: Ari Boyd, Chenghao Li
-Student Number: 992301, 1067999
 
 For Task1, there's a kaggle competition involving 400+ students and we get a stable results.
 #### Kaggle: 
